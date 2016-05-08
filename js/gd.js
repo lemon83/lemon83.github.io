@@ -38,7 +38,7 @@ mouseWheel(window,"load",function(){
             }else{
                 timer=setInterval(function () {
                     var newDate=Date.now();
-                    var myDistance =Tween.Linear(newDate-date,beginDistance,winHeight,500);
+                    var myDistance =Tween.Cubic.easeIn(newDate-date,beginDistance,winHeight,1000);
                     if(myDistance>=beginDistance+winHeight){
                         clearInterval(timer);
                         aList.style.top=beginDistance+winHeight+"px";
@@ -56,7 +56,7 @@ mouseWheel(window,"load",function(){
             } else{//改变这里
                 timer=setInterval(function () {
                     var newDate=Date.now();
-                    var myDistance =Tween.Quad.easeIn(newDate-date,beginDistance,-winHeight,500);
+                    var myDistance =Tween.Cubic.easeIn(newDate-date,beginDistance,-winHeight,1000);
 //                            console.log(myDistance,-winHeight)
                     if(myDistance<=beginDistance-winHeight){
                         clearInterval(timer);
@@ -92,7 +92,7 @@ mouseWheel(window,"load",function(){
             }else{
                 timer=setInterval(function () {
                     var newDate=Date.now();
-                    var myDistance=Tween.Linear(newDate-date,beginDistance,winHeight,100);
+                    var myDistance=Tween.easeInOut(newDate-date,beginDistance,winHeight,500);
                     console.log(myDistance,"141");
                     if(myDistance>=beginDistance+winHeight){
                         clearInterval(timer);
@@ -112,7 +112,7 @@ mouseWheel(window,"load",function(){
             }else{
                 timer=setInterval(function () {
                     var newDate=Date.now();
-                    var myDistance=Tween.Linear(newDate-date,beginDistance,-winHeight,100);
+                    var myDistance=Tween.easeInOut(newDate-date,beginDistance,-winHeight,500);
                     console.log(myDistance,beginDistance,beginDistance-winHeight,"160");
                     if(myDistance<=beginDistance-winHeight){//判断错了，已改正
                         clearInterval(timer);
