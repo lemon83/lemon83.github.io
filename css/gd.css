@@ -38,7 +38,7 @@ html,body{
     background-color: #000;
     opacity: .5;
 }
-/*页码*/
+/*页码开始*/
 .allPage{
     background-color: #000;
     background-repeat: no-repeat;
@@ -60,10 +60,11 @@ html,body{
 .fifthPage{
     background-image: url("../imgs/bg5.jpg");
 }
+/*页码结束*/
 .list img{
     height: 100%;
 }
-/*菜单*/
+/*导航开始*/
 .navBox{
     position: absolute;
     right: 0;
@@ -92,8 +93,18 @@ html,body{
     opacity: .7;
     background-color: #fff;
 }
+/*导航结束*/
 
-
+/*自我介绍开始*/
+.mySelf{
+    position: absolute;
+    left: 140px;
+    top: 140px;
+    font-size: 22px;
+    color:#fff;
+    opacity: .7;
+    font-family:"Microsoft YaHei";
+}
 
 
 
