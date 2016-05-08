@@ -34,12 +34,17 @@ html,body{
     background-color: #000;
     opacity: .5;
 }
-.firstPage{
+.allPage{
     background-color: #000;
-    background-image: url("../imgs/bg1sm.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+.firstPage{
+    background-image: url("../imgs/bg1sm.jpg");
+}
+.scendPage{
+    background-image: url("../imgs/bg2.jpg");
 }
 .list img{
     height: 100%;
