@@ -46,6 +46,9 @@ html,body{
 .scendPage{
     background-image: url("../imgs/bg2.jpg");
 }
+.thirdPage{
+    background-image: url("../imgs/bg3.jpg");
+}
 .list img{
     height: 100%;
 }
