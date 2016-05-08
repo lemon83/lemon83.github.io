@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
 }
+ul{
+    list-style:none;
+}
 html,body{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .box{
     width: 100%;
@@ -34,6 +38,7 @@ html,body{
     background-color: #000;
     opacity: .5;
 }
+/*页码*/
 .allPage{
     background-color: #000;
     background-repeat: no-repeat;
@@ -49,6 +54,48 @@ html,body{
 .thirdPage{
     background-image: url("../imgs/bg3.jpg");
 }
+.fourthPage{
+    background-image: url("../imgs/bg4.jpg");
+}
+.fifthPage{
+    background-image: url("../imgs/bg5.jpg");
+}
 .list img{
     height: 100%;
 }
+/*菜单*/
+.navBox{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 7%;
+    z-index: 2;
+    height: 100%;
+}
+.navigation {
+    display: table;
+    height: 100%;
+}
+.navigation ul{
+    display:table-cell;
+    vertical-align: middle;
+}
+.navigation li{
+    padding-left: 30px;
+}
+.navigation a{
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 20px;
+    opacity: .7;
+    background-color: #fff;
+}
+
+
+
+
+
+
+

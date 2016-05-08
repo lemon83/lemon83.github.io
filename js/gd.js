@@ -38,7 +38,7 @@ mouseWheel(window,"load",function(){
             }else{
                 timer=setInterval(function () {
                     var newDate=Date.now();
-                    var myDistance =Tween.Cubic.easeIn(newDate-date,beginDistance,winHeight,1000);
+                    var myDistance =Tween.Cubic.easeIn(newDate-date,beginDistance,winHeight,750);
                     if(myDistance>=beginDistance+winHeight){
                         clearInterval(timer);
                         aList.style.top=beginDistance+winHeight+"px";
@@ -56,7 +56,7 @@ mouseWheel(window,"load",function(){
             } else{//改变这里
                 timer=setInterval(function () {
                     var newDate=Date.now();
-                    var myDistance =Tween.Cubic.easeIn(newDate-date,beginDistance,-winHeight,1000);
+                    var myDistance =Tween.Cubic.easeIn(newDate-date,beginDistance,-winHeight,750);
 //                            console.log(myDistance,-winHeight)
                     if(myDistance<=beginDistance-winHeight){
                         clearInterval(timer);
