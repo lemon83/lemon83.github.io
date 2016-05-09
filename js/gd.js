@@ -133,6 +133,7 @@ mouseWheel(window,"load",function(){
 
 
 mouseWheel(document.documentElement,"touchmove", function (evt) {
+    alert(1)
     evt = evt || event;
     var date=Date.now();
     var beginDistance=aList.offsetTop;
