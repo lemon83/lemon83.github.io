@@ -40,6 +40,7 @@ html,body{
 }
 /*页码开始*/
 .allPage{
+    overflow: hidden;
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,8 +107,48 @@ html,body{
     z-index: 2;
     font-family:"Microsoft YaHei";
 }
+/*自我介绍结束*/
 
+/*作品展示开始*/
 
-
-
-
+/*展示1：新浪静态页面*/
+.showBox{
+    width: 100%;
+    height: 100%;
+    margin: 100px auto;
+    white-space: nowrap;
+    font:12px/36px Verdana, Geneva, sans-serif;
+}
+.mySina{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    position: relative;
+}
+.mySina img,.sinaText{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    position:absolute;
+    left:0;top:0;
+    transition:.4s;
+}
+.mySina img{
+    box-shadow:inset 0 0 0 15px rgba(0,0,0,.4);
+    background-size:cover;
+    z-index:2;
+}
+.sinaText{
+    pointer-events: none;
+    background-color:#333333;
+    transform:translate(100%);
+    padding:40px;
+    box-sizing:border-box;
+    opacity:0;
+    z-index:1;
+}
+.mySina:hover .sinaText{
+    transform:translate(0);
+    opacity:1;
+    z-index:2;
+}
