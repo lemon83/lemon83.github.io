@@ -119,10 +119,13 @@ html,body{
     white-space: nowrap;
     font:12px/36px Verdana, Geneva, sans-serif;
 }
+.showBox li{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0 120px 0 0;
+}
 .mySina{
-    width: 150px;
-    height: 150px;
-    margin: 20px;
     position: relative;
 }
 .mySina img,.sinaText{
