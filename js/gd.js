@@ -133,7 +133,6 @@ mouseWheel(window,"load",function(){
 
 
 mouseWheel(document.documentElement,"touchmove", function (evt) {
-    alert("一个困扰的问题:'整屏滚动怎样适用于移动端，我该怎么写事件。求各路大神解答'")
     evt = evt || event;
     var date=Date.now();
     var beginDistance=aList.offsetTop;
