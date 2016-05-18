@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body,p,h1,h2,h3,h4,h5,h6,dl,dd,ul,ol,input,select,textarea{ margin: 0; padding: 0;}
+li{ list-style: none;}
+a{ text-decoration: none;}
+img{ border: none; vertical-align: top;}
+input,select,textarea{ outline: none; border: none; background-color: transparent;}
+textarea{ resize:none;}
+em,i{ font-style: normal;}
+
+.fl{ float: left;}
+.fr{ float: right;}
+
+.show{ display: block;}
+.hide{ display: none;}
+
+.clearfix:after{ content: ""; display: block; clear: both;}
+.clearfix{ zoom:1;}
