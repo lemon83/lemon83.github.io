@@ -15,6 +15,18 @@ function mouseWheel(ele,eventType,fn){
         ele.attachEvent("on"+eventType,fn)
     }
 }
+//    获取直接子元素
+    function getEle(id){
+        var ele=document.getElementById(id);
+        var child=ele.childNodes;
+        var i=0;
+        for(;i<child.length;i++){
+            if(child[i].nodeName==="li"){
+                ele.removeChild(ele.childNodes[i])
+            }
+        }
+        return  child;
+    }
 
 mouseWheel(window,"load",function(){
 
@@ -22,6 +34,8 @@ mouseWheel(window,"load",function(){
     var aList=document.getElementById("list");
     var winHeight=document.documentElement.clientHeight;
     var aLi=aList.getElementsByTagName("li");
+    //var aLi=aList.querySelectorAll('li.allPage')
+    console.log(aLi)
     var timer;
     var flag=true;
     mouseWheel(document.documentElement,"mousewheel", function (evt) {
@@ -51,7 +65,7 @@ mouseWheel(window,"load",function(){
                 },30)
             }
         }else{
-            console.log(aList.style.top,-(aLi.length-1)*winHeight,"93");
+            console.log(aList.style.top,-(aLi.length-1)*winHeight,"54");
             if(parseInt(getStyle(aList).top)<=-(aLi.length-1)*winHeight){
                 aList.style.top=-(aLi.length-1)*winHeight+"px";
                 flag=true;
@@ -59,7 +73,7 @@ mouseWheel(window,"load",function(){
                 timer=setInterval(function () {
                     var newDate=Date.now();
                     var myDistance =Tween.Cubic.easeIn(newDate-date,beginDistance,-winHeight,750);
-//                            console.log(myDistance,-winHeight)
+                            //console.log(myDistance,-winHeight,"62")
                     if(myDistance<=beginDistance-winHeight){
                         clearInterval(timer);
                         aList.style.top=beginDistance-winHeight+"px";
