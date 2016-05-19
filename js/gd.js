@@ -33,8 +33,8 @@ mouseWheel(window,"load",function(){
     var oBox=document.getElementById("box");
     var aList=document.getElementById("list");
     var winHeight=document.documentElement.clientHeight;
-    var aLi=aList.getElementsByTagName("li");
-    //var aLi=aList.querySelectorAll('li.allPage')
+    //var aLi=aList.getElementsByTagName("li");
+    var aLi=aList.querySelectorAll('li.allPage')
     console.log(aLi)
     var timer;
     var flag=true;
