@@ -17,6 +17,9 @@ html,body{
     position: relative;
     color:#fff;
 }
+span{
+    margin-right: 20px;
+}
 .list{
     position: absolute;
     left: 0;
