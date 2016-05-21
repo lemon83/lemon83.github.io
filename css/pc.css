@@ -17,6 +17,9 @@ html,body{
     position: relative;
     color:#fff;
 }
+.test span{
+    width: 20px;
+}
 .list{
     position: absolute;
     left: 0;
