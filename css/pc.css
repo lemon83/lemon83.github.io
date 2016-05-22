@@ -46,6 +46,11 @@ html,body{
 }
 /*页码开始*/
 .allPage{
+    /*position: relative;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
     overflow: hidden;
     background-color: #000;
     background-repeat: no-repeat;
