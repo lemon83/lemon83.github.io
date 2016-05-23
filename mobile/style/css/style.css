@@ -55,38 +55,38 @@ ul, li {
 
 
 
-.section1{background-image:url(../img/page1.jpg);
+.section1{background-image:url(../../imgs/page1.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
     position:relative;}
 
-.section2{background-image:url(../img/page2.jpg);
+.section2{background-image:url(../../imgs/page2.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;}
 
-.section3{background-image:url(../img/page3.jpg);
+.section3{background-image:url(../../imgs/page4.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;}
 
-.section4{background-image:url(../img/page4.jpg);
+.section4{background-image:url(../../imgs/page4.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;}
 
-.section5{background-image:url(../img/page5.jpg);
+.section5{background-image:url(../../imgs/page5.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;}
 
-.section6{background-image:url(../img/page6.jpg);
+.section6{background-image:url(../../imgs/page6.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;}
 
-.section7{background-image:url(../img/page7.jpg);
+.section7{background-image:url(../../imgs/page7.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;}
