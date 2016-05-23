@@ -1,287 +1,312 @@
 
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>首页</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <script src="./style/js/jquery.js"></script>
-    <link rel="stylesheet" href="./style/css/common.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>国人盛世</title>
+    <link rel="stylesheet" type="text/css" href="./style/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/js/jquery.fullPage.js">
+    <link rel="stylesheet" type="text/css" href="./style/css/am.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?303d3d84d93cfec5912e00504d6527f4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
+
 <body>
+<audio src="music/qlsy.mp3" autoplay id="audio" hidden="hidden" loop></audio>
+<a><div id="audioPlay"></div></a>
+<!--<div class="gz">-->
+<!--<img class="clear" src="img/clear.png">-->
+<!--<img src="img/gz.png"></div>-->
+<!--<script>-->
+<!--$('.gz').click(function(){-->
+<!--$(this).hide();-->
+<!--})-->
+<!--</script>-->
+<div id="fullpage">
+    <div class="section section1">
 
-
-<script src="./style/js/index.js"></script>
-<link rel="stylesheet" href="./style/css/index.css">
-
-<!-- header -->
-<header id="header">
-    <!-- nav -->
-    <nav>
-        <div class="w1172 clearfix">
-            <a href="/" class="logo fl"><img src="http://web.source.weikejia.net/weikejia/img/we_03.png" alt=""></a>
-            <ul class="list fr">
-                <li><a class="active" href="/">首页</a></li>
-                <li><a href="javascript:;" data-pos="case-list" role="pos">案例</a></li>
-                <li><a href="/service">服务</a></li>
-                <li><a href="javascript:;" data-pos="bbs_hot" role="pos">论坛</a></li>
-                <li><a href="javascript:;" data-pos="cooperation" role="pos">联系</a></li>
-                <!-- <li><a href="/about">关于我们</a></li> -->
-            </ul>
-        </div>
-    </nav>
-    <!-- nav end-->
-    <div class="w1172 tac first-screen">
-        <div class="ad">
-            <h2 class="world">想撬动你的世界？</h2>
-            <h2 class="wecan">支点就在这里...<b>WE CAN+</b></h2>
-        </div>
-
-        <!-- register -->
-        <div class="buttons">
-            <a class="login" href="#">登录</a>
-            <a class="reg" href="#">注册</a>
-        </div>
-        <!-- register end-->
-    </div>
-</header>
-<!-- header end-->
-
-
-<!-- wecan -->
-<div id="wecan" class="min-w1172">
-    <div class="w1172">
-        <h2 class="title"><img src="http://web.source.weikejia.net/weikejia/img/as_05.png" alt=""></h2>
-        <ul class="func clearfix">
-
-            <li>
-                <div class="icon-wrap"><a href="/wecan/h5" target="_blank"><i class="func_icon sprite-we_12 h5"></i></a></div>
-                <h4><a href="/wecan/h5" target="_blank">H5定制</a></h4>
-                <p>
-                    <a href="/wecan/h5" target="_blank">
-                        摆脱模板制作的局限，<br />
-                        线上线下的结合让营销活动更具吸引力让你<br />
-                        的创意肆意飞扬，让视觉炫酷细腻<br />
-                    </a>
-                </p>
-            </li>
-            <li>
-                <div class="icon-wrap"><a href="/wecan/wx" target="_blank"><i class="func_icon sprite-we_05 wx"></i></a></div>
-                <h4><a href="/wecan/wx" target="_blank">微信营销</a></h4>
-                <p>
-                    <a href="/wecan/wx" target="_blank">
-                        在千百万个撞脸微商中，想展露出头角，<br />
-                        你需要更强大的支持，<br/>
-                        来吧，加入微客加!<br />
-                        为您提供更全面的营销技术支持！
-                    </a>
-                </p>
-            </li>
-            <li>
-                <div class="icon-wrap"><a href="/wecan/tech" target="_blank"><i class="func_icon sprite-we_09 tech"></i></a></div>
-                <h4><a href="/wecan/tech" target="_blank">技术服务</a></h4>
-                <p>
-                    <a href="/wecan/tech" target="_blank">
-                        根据客户需求,及客户行业背景,由资深业务<br />
-                        团队融合互联网营销思维和经<br />
-                        验,最终通过技术手段实现向匹配的的工具。
-                    </a>
-                </p>
-            </li>
-            <li>
-                <div class="icon-wrap"><a href="/wecan/app" target="_blank"><i class="func_icon sprite-we_15 app"></i></a></div>
-                <h4><a href="/wecan/app" target="_blank">原生app</a></h4>
-                <p>
-                    <a href="/wecan/app" target="_blank">
-                        未来的营销，<br />
-                        不需要太多的渠道，<br />
-                        只要让你的产品进入消费者的手机，<br />
-                        就是最好的营销
-                    </a>
-                </p>
-            </li>
-
-        </ul>
-    </div>
-</div>
-<!-- wecan end -->
-
-
-<!-- case -->
-<div id="case">
-    <div class="w1172">
-        <!-- top -->
-        <div class="top clearfix" id="case-list">
-            <h3 class="fl">案例</h3>
-            <ul class="tab fr">
-
-                <li>
-                    <a
-                            class="active"
-                            href="javascript:;"
-                            data-id="10001"
-                            >
-                        H5
-                    </a>
-                </li>
-
-                <li>
-                    <a
-
-                            href="javascript:;"
-                            data-id="10000"
-                            >
-                        微信
-                    </a>
-                </li>
-
-                <li>
-                    <a
-
-                            href="javascript:;"
-                            data-id="10002"
-                            >
-                        APP
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
-        <!-- information -->
-        <div class="infos clearfix">
-
-            <!--  -->
-
-        </div>
-
-    </div>
-</div>
-<!-- case end-->
-
-
-
-<!-- bbs hot -->
-<div id="bbs_hot">
-    <div class="big-title min-w1172">
-        <div class="w1172"><img src="http://web.source.weikejia.net/weikejia/img/as_09.png" alt=""></div>
-    </div>
-
-    <!-- articles -->
-    <div class="w1172">
-        <div class="articles">
-            <ul class="list">
-                <li>
-                    <a href="" class="a-link-move">HTML5游戏行业生态构建之路：平台精细化运</a>
-                    <p>相对于今年炒得沸沸扬扬的VR技术，HTML5游戏作为一直都颇为火爆的领域，从今年年初就频频爆出诸多利好消息。从《传奇世界之王者归来》惊艳的千万流水成绩再到TFC大会上HTML5专场论坛的火热场景，无不在向游戏人透露出HTML5游戏来势汹汹，积累沉淀终将迎来爆发</p>
-                </li>
-                <li>
-                    <a href="" class="a-link-move">H5将在2016年迎来大爆发</a>
-                    <p>在中关村任何一栋高大上的5A写字楼 或者 普通的小民房，一个个APP历经3个月或者更长的时间被开发出来，然后商务或者渠道人员和依次通过中国上百个应用市场发布他们的呕心沥血的杰作。</p>
-                </li>
-
-            </ul>
-
-            <div class="more">
-                <h2>热点资讯，更多查询，更多新鲜感...</h2>
-                <a href="" class="a-link-move">进入>></a>
+        <div class="text">
+            <h1>10</h1>
+            <h2>年品质 值得信赖</h2>
+            <h3>为企业提供完美移动互联网方案</h3><br>
+            <hr/>
+            <div class="text1">
+                <!--<img src="img/p1.png">-->
+                <span class="text2" id="text2_1"><a href="#">APP</a></span>
+                <span class="text3"></span>
+                <span class="text2" id="text2_2"><a href="#">HTML5</a></span>
+                <span class="text3"></span>
+                <span class="text2" id="text2_3"><a href="#">微信</a></span>
+                <!--<span class="text3"></span>
+                <span class="text2" id="text2_3"><a href="#">微服务</a></span>-->
             </div>
         </div>
+        <div class="btlogo"><img src="img/logo.png"></div>
     </div>
-</div>
-<!-- bbs hot end -->
-
-<!-- footer -->
-<div id="footer" class="min-w1172">
-
-    <div class="w1172">
-        <h2 id="cooperation"><b>合作留言</b></h2>
-        <!-- form -->
-        <div class="form">
-
-            <!-- texts -->
-            <div class="clearfix texts">
-
-                <div class="text fl">
-                    <div class="fwrap">
-                        <p>姓名</p>
-                        <div class="putwrap"><input type="text" name="name" value=""></div>
-                        <div class="error"></div>
-                    </div>
-                    <div class="fwrap">
-                        <p>联系方式</p>
-                        <div class="putwrap"><input type="text" name="link" value=""></div>
-                        <div class="error"></div>
-                    </div>
+    <div class="section section2">
+        <h1>WeCan+</h1>
+        <h2>与客户沟通，从使用者的角度发现问题，找到最佳解决方案。</h2>
+        <div class="p2text">
+            <p class="p2text1">
+                <span class="p2text_bl">视觉与动画设计</span>
+                <span>图形创意卡通动漫</span>
+                <span>软件产品UI设计</span>
+                <span>移动应用界面设计</span>
+                <span>动漫课件开发</span>
+                <span>3D/AR界面策划</span>
+                <span>大屏数据展示</span>
+            </p>
+        </div>
+        <div class="gif"><a href="news.html"><img src="img/p2.png"></a></div>
+    </div>
+    <div class="section section3">
+        <h1>WeCan+</h1>
+        <h2>找到最优秀的解决方法，提供最佳的设计方法</h2>
+        <div class="p2text">
+            <p class="p2text2">
+                <span class="p2text_bl">研发和技术服务</span>
+                <span>前端技术开发</span>
+                <span>ios/Android客户端开发</span>
+                <span>HTML5动态效果制定</span>
+                <span>企业应用及微信开发</span>
+                <span>Flash/WPF开发</span>
+                <span>商场门户网站建设</span>
+            </p>
+        </div>
+        <div class="gif"><a href="news1.html"><img src="img/p2.png"></a></div>
+    </div>
+    <div class="section section4">
+        <div class="p3text">
+            <div class="p3text1">
+                <div class="p3text1_1"><span>H5</span></div>
+                <div class="p3text1_2"><span>微信</span></div>
+                <div class="p3text1_3"><span>App</span></div>
+            </div>
+            <div class="p3img">
+                <div class="p3img1">
+                    <img src="img/1.jpg">
+                    <p class="p3text2">
+                        	<span class="p3text4">
+                                <span class="p3text2_1">超银时代</span>
+                                <a href="http://www.weikejia.net/h5view/sj/cysd"><span class="p3text2_2">预览</span></a>
+                            </span>
+                    </p>
                 </div>
-
-                <div class="footer fl">
-                    <p class="copyright"> ©  <br /></p>
-                    <div class="address">
-                        <p class="addr"></p>
-                        <div class="fax"></div>
-                        <div class="other-contact">
-                            <a href="http://wpa.qq.com/msgrd?v=3&uin=312495164&site=qq&menu=yes" target="_blank"><img src="http://web.source.weikejia.net/weikejia/img/contact_03.jpg" alt=""></a>
-                            <a href="javascript:;" role="wx">
-                                <img src="http://web.source.weikejia.net/weikejia/img/contact_05.jpg" alt="">
-                                <img class="show-code" src="http://web.source.weikejia.net/weikejia/img/wx-code.jpg" alt="">
-                            </a>
-                            <a href="http://weibo.com/guorenshengshi" target="_blank"><img src="http://web.source.weikejia.net/weikejia/img/contact_07.jpg" alt=""></a>
-                        </div>
-                    </div>
+                <div class="p3img1">
+                    <img src="img/2.jpg">
+                    <p class="p3text2">
+                        	<span class="p3text4">
+                                <span class="p3text2_1">无人机</span>
+                                <a href="http://www.weikejia.net/h5view/h5/wrj"><span class="p3text2_2">预览</span></a>
+                            </span>
+                    </p>
+                </div>
+                <div class="p3img1">
+                    <img src="img/3.jpg">
+                    <p class="p3text2">
+                        	<span class="p3text4">
+                                <span class="p3text2_1">悦食家</span>
+                                <a href="http://www.weikejia.net/h5view/app/app01"><span class="p3text2_2">预览</span></a>
+                            </span>
+                    </p>
+                </div>
+                <div class="p3img1">
+                    <img src="img/4.jpg">
+                    <p class="p3text2">
+                        	<span class="p3text4">
+                                <span class="p3text2_1">微客加</span>
+                                <a href="http://www.ygflife.cn/h5/weikejia/"><span class="p3text2_2">预览</span></a>
+                            </span>
+                    </p>
+                </div>
+                <div class="p3img1">
+                    <img src="img/5.jpg">
+                    <p class="p3text2">
+                        	<span class="p3text4">
+                                <span class="p3text2_1">约汗</span>
+                                <a href="http://www.weikejia.net/h5view/app/app02"><span class="p3text2_2">预览</span></a>
+                            </span>
+                    </p>
+                </div>
+                <div class="p3img1">
+                    <img src="img/6.jpg">
+                    <p class="p3text2">
+                        	<span class="p3text4">
+                                <span class="p3text2_1">有宠</span>
+                                <a href="http://www.weikejia.net/h5view/app/app03"><span class="p3text2_2">预览</span></a>
+                            </span>
+                    </p>
                 </div>
 
             </div>
-
-            <!-- textarea -->
-            <div class="fwrap">
-                <p>需求描述</p>
-                <div class="putwrap"><textarea name="description"></textarea></div>
-                <div class="error"></div>
-            </div>
-
-            <!-- submit -->
-            <div class="submit"><a href="javascript:;" >提交</a></div>
+            <script>
+                $('.p3img1').children('p').hide();
+                $('.p3img1').mouseenter(function(){
+                    $(this).children('p').show();
+                })
+                $('.p3img1').mouseleave(function(){
+                    $(this).children('p').hide();
+                })
+            </script>
         </div>
-        <!-- form end-->
     </div>
-
+    <div class="section section5">
+        <div class="p5text">
+            <div class="p5left">
+                <span class="p5text1">开发团队</span>
+                <ul class="p5left">
+                    <li><span>集结了有丰富经验的JAVA和PHP技术精英</span></li>
+                    <li><span>定期组织基础培训和项目实战</span></li>
+                    <li><span>基于JAVA的B/S相关领域</span></li>
+                    <li><span>基于C51、ARM、DSP等核心领域</span></li>
+                </ul>
+            </div>
+            <div class="p5right">
+                <span class="p5text1">用户体验</span>
+                <ul class="p5right">
+                    <li><span>触及视觉灵魂的设计</span></li>
+                    <li><span>精心布局的用户体验</span></li>
+                    <li><span>亲近用户交流</span></li>
+                    <li><span>合理的UI\UE的逻辑关系</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section section6">
+        <p class="p5title">合作伙伴</p>
+        <p class="p5body">中国移动</p>
+        <p class="p5body">中国联通</p>
+        <p class="p5body">中国电信</p>
+        <p class="p5body">大唐盛世</p>
+    </div>
+    <div class="section section7">
+        <div class="p6body">
+            <h1>010-58691056</h1>
+            <h2>地址：北京市朝阳区建外SOHO5号楼1103</h2>
+            <h2>邮编：100022</h2>
+            <h2>E-mail:grss@bjgrss.com</h2>
+            <h2>Copyright 2008-2015 国人盛世 版权所有</h2>
+            <h2>
+                <span>京ICP备15038881号</span>&nbsp;&nbsp;
+                <span>站长统计</span>&nbsp;
+                <span>百度统计</span>
+            </h2>
+        </div>
+    </div>
 </div>
 
-<!-- footer end-->
 
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            verticalCentered:true,//内容是否居中
+            //menu:'#mynav',
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['首页', '服务1', '服务2', '案例', '品质', '客户', '联系'],
+            showActiveTooltip: true,//是否显示当前导航的小圆点信息 默认false
+            //resize:true,
+            //continuousVertical:true,//循环滚动
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
 
+            afterLoad:function(link,index){
+                switch(index){
+                    case 1:
+                        $('.text').show();
+                        break;
+                    case 2:
+                        $('.section2').children().show();
+                        break;
+                    case 3:
+                        $('.section3').children().show();
+                        break;
+                    case 4:
+                        //$('.section4').children().show();
+                        break;
+                    case 5:
+                        $('.section5').children().show();
+                        break;
+                    case 6:
+                        $('.section6').children().show();
+                        break;
+                    default:
+                        break;
+                }
+            },
+
+            onLeave:function(link,index){
+                switch(index){
+                    case 1:
+                        $('.text').hide();
+                        break;
+                    case 2:
+                        $('.section2').children().hide();
+                        break;
+                    case 3:
+                        $('.section3').children().hide();
+                        break;
+                    case 4:
+                        //$('.section4').children().hide();
+                        break;
+                    case 5:
+                        $('.section5').children().hide();
+                        break;
+                    case 6:
+                        $('.section6').children().hide();
+                        break;
+                    default:
+                        break;
+                }
+            },
+
+            afterRender:function(){
+            }
+
+        });
+    });
+</script>
 
 <script>
-    $(function(){
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
 
-        (function(){
-            var arrA = $('#case .tab a');
-            if(arrA.length > 0){
-                var id = arrA.eq(0).attr('data-id');
-                oIndex.getCaseList(id);
-            }
-        })();
-        oIndex.init();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script>
+    $("#audioPlay").on('click',function(){
+        if(audio.paused){
+            audio.play();
+            this.style.backgroundImage="url(img/kq.png)";
+        }else{
+            audio.pause();
+            this.style.backgroundImage="url(img/gb.png)";
+        }
 
     })
 </script>
-
-
-
-
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?3d923727c181f874a21a9a386a126e0b";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
+<!--<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa07f9a87c8a404d6eaabdd38ee22554f' type='text/javascript'%3E%3C/script%3E")) </script>-->
 </body>
 </html>
-
