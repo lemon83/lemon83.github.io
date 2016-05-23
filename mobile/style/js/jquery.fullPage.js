@@ -2460,6 +2460,3 @@
         }
     };
 });
-
-var xs= document.getElementsByTagName("ins");
-xs.style.display="none";
