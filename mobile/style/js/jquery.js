@@ -7602,7 +7602,7 @@
             return callback;
         }
     });
-
+    }
 // Detect, normalize options and install callbacks for jsonp requests
     jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 
