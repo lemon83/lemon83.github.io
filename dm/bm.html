@@ -35,7 +35,15 @@
 </head>
 <body>
 
-<audio src="./music/My_Dearest.mp3" autoplay="autoplay" hidden="hidden" loop></audio>
+
+<div id="kg">
+
+    <input type="button" value="暂停" id="zt"/>
+    <input type="button" value="隐藏" id="yc"/>
+
+</div>
+
+<audio src="./music/My_Dearest.mp3" autoplay="autoplay" hidden="hidden"  controls></audio>
 
 <div>
 
@@ -65,5 +73,12 @@
     window.onload= function () {
         alert("我对二次元是真爱。。。")
     }
+//    var oKg=document.getElementById("kg");
+//    var oZt=document.getElementById("zt");
+//    var oYc=document.getElementById("yc");
+//    var oPlayer=document.getElementsByTagName("audio");
+//    oZt.onclick= function () {
+    
+//    }
 </script>
 </html>
