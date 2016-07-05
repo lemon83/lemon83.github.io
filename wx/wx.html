@@ -357,17 +357,18 @@
             serverId: []
           };
           document.querySelector('#chooseImage').onclick = function () {
-            wx.chooseImage({
-              success: function (res) {count: 1, // 默认9
-                      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
-                      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
-                images.localId = res.localIds;
-                alert('已选择 ' + res.localIds.length + ' 张图片');
-              }
-            });
-          };
+              wx.chooseImage({
+                  count: 1, // 默认9
+                  sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+                  sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+                  success: function (res) {
+                      var localIds = res.localIds; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片
+                      alert('已选择 ' + res.localIds.length + ' 张图片');
+                  }
+              });
 
-          // 5.2 图片预览
+
+              // 5.2 图片预览
           document.querySelector('#previewImage').onclick = function () {
             wx.previewImage({
               current: 'http://img5.douban.com/view/photo/photo/public/p1353993776.jpg',
