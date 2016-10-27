@@ -237,3 +237,57 @@ html,body{
 }
 
 /*展示：*/
+
+
+
+
+
+
+#vid{
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#me{
+    width: 200px;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -13px;
+    z-index: 2;
+}
+#myName{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 26px;
+    font-size: 18px;
+    color: rgba(255, 255, 211, .6);
+}
+#nameLine{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 26px;
+    width: 0;
+    transition: .7s;
+    border-bottom: 1px solid darkcyan;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#myName:hover #nameLine{
+    width:100%;
+}
+
+
+
+
+
