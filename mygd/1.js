@@ -37,6 +37,8 @@ window.onload = function() {
             }
         }, 30)
     };
+    
+    
     var timer4 = setInterval(function() {
         if (flag === true) {
             var timer3 = setInterval(function() {
@@ -51,5 +53,5 @@ window.onload = function() {
         } else {
             flag = true
         }
-    }, 2500)
+    }, 1500)
 };

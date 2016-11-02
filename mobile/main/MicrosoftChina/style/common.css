@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+.header{
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+.logo{
+    width: 116px;
+    height: 24px;
+    background: url(../images/logo_pad.jpg) left top no-repeat;
+    background-size: contain;
+    float: left;
+}
+.menu{
+    float: right;
+}
+.menu_link{
+    font-size: 18px;
+    background: url(../images/menu.jpg) right bottom no-repeat;
+    padding-right: 28px;
+    line-height: 1;
+    vertical-align: middle;
+}
+.search_link{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-left: 19px;
+    background: url(../images/fdj.jpg) left top no-repeat;
+    vertical-align: middle;
+}
+.search_input{
+    height: 24px;
+    border: solid 1px #666;
+    width: 241px;
+    display: none;
+    float: right;
+}
+
+.nav li{
+    background-color: #19529f;
+    color: #FFF;
+    margin-bottom: 1px;
+    position: relative;
+}
+.nav li:nth-child(1){
+    margin-bottom: 2px;
+}
+.nav a{
+    color: #FFF;
+    padding: 0 13px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.nav a span{
+    background: url(../images/jt.png) right center no-repeat;
+    padding-right: 18px;
+}
+.nav dl{
+    line-height: 30px;
+    display: none;
+}
+
+.banner{
+    border-top: solid 3px #d8d8d8;
+    position: relative;
+}
+.img_big{
+    display: none;
+}
+.img_big img,
+.img img{
+    width: 100%;
+}
+.text{
+    background-color: #1570A5;
+    color: #FFF;
+    padding: 0 42px 14px;
+}
+.text h3{
+    height: 54px;
+    line-height: 54px;
+    font-size: 28px;
+}
+.text p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.text a{
+    color: #FFF;
+    font-size: 12px;
+}
+.img_list{
+    margin-top: 20px;
+}
+.img_list p{
+    font-size: 14px;
+    line-height: 1.6;
+    padding: .8em 0;
+    color: #1570A7;
+}
+.autoImg{
+    width: 100%;
+}
+
+
+.rel_title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: none;
+}
+.rel_list{
+    text-align: center;
+}
+.rel_list li{
+    width: 33.3%;
+    height: 120px;
+    float: left;
+}
+.rel_list li a{
+    display: inline-block;
+    color: #000;
+    line-height: 25px;
+}
+.rel_list li img{
+    display: block;
+}
+.rel_tab li.active{
+    background-color: #1570A6;
+    color: #FFF;
+}
+.rel_big{
+    display: none;
+}
+.about{
+    padding: 25px 7px 26px 5px;
+    background-color: #1570A5;
+}
+.about_t{
+    background-color: #115E8A;
+    padding: 18px;
+}
+.about_t img{
+    float: left;
+    margin-right: 20px;
+}
+.about_t h4{
+    font: 20px/29px 'Microsoft YaHei','微软雅黑';
+    color: #FFFFFF;
+}
+.about_t p{
+    font: 14px/24px 'Microsoft YaHei','微软雅黑';
+    color: #FFFFFF;
+}
+.about_b{
+    margin-top: 15px;
+}
+.about_b h4{
+    font: 29px/52px 'Microsoft YaHei','微软雅黑';
+    color: #FFFFFF;
+}
+.about_b p{
+    font: 15px/32px 'Microsoft YaHei','微软雅黑';
+    color: #FFFFFF;
+}
+
+.footer{
+    background-color: #EEEEEE;
+    padding-top: 20px;
+}
+.list_item{
+    font-family: "Microsoft YaHei","微软雅黑";
+    margin-bottom: 20px;
+}
+.list_item dt{
+    font-size: 16px;
+}
+.list_item dt a{
+    font: 14px/26px 'Microsoft YaHei','微软雅黑';
+    color: #000000;
+}
+.list_item .padd36{
+    padding-left: 36px;
+}
+.list_item dd{
+    line-height: 24px;
+}
+.list_item dd a{
+    color: #115E8A;
+    font-size: 12px;
+}
+.phone{
+    display: none;
+}
+.list_item .s1{
+    background: url("../images/win_logo.jpg") left center no-repeat;
+}
+.list_item .s2{
+    background: url("../images/office_logo.jpg") left center no-repeat;
+}
+.list_item .s3{
+    background: url("../images/surface_logo.jpg") left center no-repeat;
+}
+.list_item .s4{
+    background: url("../images/windows_logo.jpg") left center no-repeat;
+}
+.list_item .s5{
+    background: url("../images/Nokia_logo.jpg") left center no-repeat;
+}
+.list_item .s6{
+    background: url("../images/Skype_logo.jpg") left center no-repeat;
+}
+.list_item .s7{
+    background: url("../images/bing_logo.jpg") left center no-repeat;
+}
+.list_item .s8{
+    background: url("../images/shop_logo.jpg") left center no-repeat;
+}
+
+.footer_cont{
+    background-color: #EEEEEE;
+    padding-bottom: 35px;
+}
+.footer_cont img{
+    margin-bottom: 20px;
+}
+.footer_cont .earth{
+    height: 22px;
+    color: #1570A6;
+    font: 12px/22px 'Microsoft YaHei','微软雅黑';
+    padding-left: 35px;
+    background: url("../images/earth.jpg") left center no-repeat;
+    margin-bottom: 38px;
+}
+.footer_cont .es{
+    width: 100%;
+    display: inline-block;
+    font-style: normal;
+    font: 14px/26px 'Microsoft YaHei','微软雅黑';
+}
+.footer_cont span{
+    color: #1570A6;
+    font: 14px/26px 'Microsoft YaHei','微软雅黑';
+    margin-right: 25px;
+}
+.footer_cont p{
+    font: 12px/17px 'Microsoft YaHei','微软雅黑';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gWidth{
+    padding-left: 6px;
+    padding-right: 6px;
+}

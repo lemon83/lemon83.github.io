@@ -1,0 +1,135 @@
+@charset "utf-8";
+.header{
+    padding-top: 32px;
+}
+.logo{
+    width: 160px;
+    height: 34px;
+}
+.menu{
+    display: none;
+}
+.search_input{
+    display: block;
+}
+.nav li{
+    float: left;
+    background-color: transparent;
+}
+.nav a{
+    color: #000;
+}
+.nav a span{
+    background-image: url(../images/jt_pad.jpg);
+}
+.nav a:hover{
+    background-color: #ccc;
+}
+.nav dl{
+    position: absolute;
+    left: 0; top: 40px;
+    color: #000;
+    background-color: #ccc;
+}
+.nav dl dd{
+    white-space: nowrap;
+}
+.img{
+    display: none;
+}
+.img_big{
+    display: block;
+}
+.item_box{
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+}
+
+.item{
+    width: 32%;
+}
+.fr{
+    float: right;
+}
+.bc{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+.item:nth-child(3n - 1){
+    margin: 0 2%;
+}
+*/
+.rel_title{
+    display: block;
+}
+.rel_list{
+    margin-bottom: 20px;
+}
+.rel_list li{
+    width: auto;
+    height: auto;
+    margin-right: 30px;
+}
+.rel_list li img{
+    display: none;
+}
+.rel_list li a div{
+    display: none;
+}
+.rel_big{
+    display: block;
+}
+.rel_text{
+    display: block;
+}
+.rel_tab{
+    margin-bottom: 20px;
+}
+.rel_tab li{
+    float: left;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 10px;
+    color: #000;
+}
+.rel_img{
+    margin-bottom: 20px;
+}
+.rel_img img{
+    width: 40%;
+    float: left;
+}
+.rel_img p{
+    margin-left: 24px;
+    float: left;
+}
+.img_list_text dl dt{
+    font: 28px/50px 'Microsoft YaHei','微软雅黑';
+}
+.img_list_text dl dd{
+    font: 12px/28px 'Microsoft YaHei','微软雅黑';
+    color: #1570B9;
+}
+
+.ipad{
+    width: 50%;
+    float: left;
+}
+
+.phone{
+    display: block;
+}
+.footer{
+    background-color: #EEEEEE;
+    padding-top: 20px;
+}
+
+.gWidth{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.footer_cont .es{
+    width: auto;
+}

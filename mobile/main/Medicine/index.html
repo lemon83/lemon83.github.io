@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>医药平台</title>
+    <link rel="stylesheet" href="style/reset.css" type="text/css">
+    <link rel="stylesheet" href="style/common.css" type="text/css">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+    <script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+</head>
+<body class="body">
+    <header class="gWidth">
+        <a href="#" class="fenlei">
+           <i class="icon"></i>
+            分类
+        </a>
+        <a href="#" class="shop_icon"></a>
+        <div class="input">
+            <input class="input_text" placeholder="输入搜索关键词" type="text" id="i1">
+            <input type="submit" class="submit" value="">
+        </div>
+    </header>
+    <div class="banner gWidth" id="banner">
+        <ul class="banner_img">
+            <li><img src="img/b1.jpg" alt=""></li>
+            <li><img src="img/b2.jpg" alt=""></li>
+            <li><img src="img/b3.jpg" alt=""></li>
+    </ul>
+    <ol>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+    </ol>
+    </div>
+    <nav>
+        <ul class="clearfix">
+            <li>
+                <a href="#">
+                    <span class="icon_nav in_1"></span>
+                    <p>中西药</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon_nav in_2"></span>
+                    <p>儿科用药</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon_nav in_3"></span>
+                    <p>皮肤用药</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon_nav in_4"></span>
+                    <p>医疗器械</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon_nav in_5"></span>
+                    <p>养生保健</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon_nav in_6"></span>
+                    <p>隐形眼镜</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon_nav in_7"></span>
+                    <p>美容护肤</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon_nav in_8"></span>
+                    <p>成人用品</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="shop">
+       <dl class="clearfix shop_list">
+           <dt>
+               <h4><span></span><i>全网最低价</i></h4>
+           </dt>
+           <dd class="fl shop_l br">
+               <img src="img/lihun.jpg"/>
+           </dd>
+           <dd class="fr shop_r">
+                <img src="img/kama.jpg"/>
+                <img src="img/fengjiao.jpg"/>
+           </dd>
+       </dl>
+    </div>
+    <div class="ad1">
+        <img src="img/ad1.jpg"/>
+    </div>
+    <div class="shop">
+        <dl class="clearfix shop_list">
+            <dt>
+            <h4><span></span><i>答谢师恩</i></h4>
+            </dt>
+            <dd class="fr shop_l bl">
+                <img src="img/yaojiu.jpg"/>
+            </dd>
+            <dd class="fl shop_r">
+                <img src="img/hengcheng.jpg"/>
+                <img src="img/wantong.jpg"/>
+            </dd>
+        </dl>
+    </div>
+    <div class="ad1">
+        <img src="img/818.jpg"/>
+    </div>
+    <div class="shop">
+        <dl class="clearfix shop_list">
+            <dt>
+            <h4><span></span><i>美美哒</i></h4>
+            </dt>
+            <dd class="fl shop_l br">
+                <img src="img/danbai.jpg"/>
+            </dd>
+            <dd class="fr shop_r">
+                <img src="img/cansi.jpg"/>
+                <img src="img/aidemei.jpg"/>
+            </dd>
+        </dl>
+    </div>
+   <div class="login clearfix">
+      <p class="login_left fl">
+          <a href="#" class="login_right">
+              登录
+          </a>
+          <span>|</span>
+          <a href="#" class="login_right">
+              注册
+          </a>
+      </p>
+      <p class="login_right fr">
+          <a href="#">回主页</a>
+      </p>
+
+   </div>
+    <footer>
+        <p class="blue">
+            <a href="#">触屏版</a>
+            <span>|</span>
+            <a href="#">电脑版</a>
+            <span>|</span>
+            <a href="#">APP版</a>
+        </p>
+        <p class="light_blue">
+            <a href="#"><em class="a1"></em><span>正规药店</span></a>
+            <a href="#"><em class="a2"></em><span>正规药店</span></a>
+            <a href='#'><em class="a3"></em><span>正规药店</span></a>
+        </p>
+        <p class="blue">
+            <a href="#">咨询电话：400-7579-818</a>
+        </p>
+    </footer>
+</body>
+<script src="js/action.js"></script>
+<script src="js/move.js"></script>
+</html>
