@@ -13,9 +13,11 @@ header{
     height: 100px;
 }
 .logo_text{
+/*
     position: absolute;
     left: 39%;
     top: 55%;
+*/
     text-shadow: 2px 2px 10px rgba(22,22,22,.3);
 }
 .logo_text h2{
