@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body{ background:#f2f2f2;}
+.com_width{ width:1000px; margin:0 auto;}
+.icon_index{ background:url(../img/ico_index.png) 0 0; position:absolute;}
+.cur_point{ cursor:pointer;}
+.ml22{ margin-left:22px;}
+.mb19{ margin-bottom:19px;}
+.pb28{ padding-bottom:28px;}
+/*公用标题*/
+.com_tit h2{ height:38px; width:300px; background:url(../img/ico_index.png) no-repeat 0 -46px; margin:79px 0 12px 14px; }
+.tit_tab{ margin-top:97px;}
+.tit_tab li{ width:63px; text-align:center; float:left; position:relative;}
+.tit_tab i{ width:1px; height:10px; background-position:-70px 0; top:0; right:0;}
+.tit_tab a{ color:#666; padding:0 3px 8px;}
+.tit_tab .active a{ border-bottom:2px solid #669900;}
+/*标题坐标*/
+.trending .com_tit h2{ background-position:0 -91px;}
+.v_chart .com_tit h2{ height:57px; width:180px; background-position:0 -138px; position:relative;}
+.program .com_tit h2{ background-position:0 -322px;}
+.pocket_fan .com_tit h2{ background-position:0 -894px;}
+.musicion .com_tit h2{ background-position:0 -276px;}
+.hot-recommend .com_tit h2{ background-position:0 -230px;}
+.featured .com_tit h2{ background-position:0 -506px;}
+.playlist .com_tit h2{ background-position:0 -598px;}
+.like .com_tit h2{ background-position:0 -736px;}
+/*头部和导航*/
+.header{ background:url(../img/headBg.png) repeat-x;}
+.header a:hover{ color:#ccff99;}
+.head_cont{ height:41px;}
+.logo{ width:88px; height:41px; background:url(../img/logo.png) no-repeat; text-indent:-999em; margin-right:14px;}
+.logo a{ display:block; height:100%;}
+.nav_list li{ float:left; padding-left:16px; position:relative;}
+.header a{ color:#ccc; float:left; line-height:41px;}
+.nav_list i{ width:0; height:0; border:5px solid transparent; border-top:5px solid #999999; float:left; margin:19px 0 0 3px;}
+.nav_list span{ height:16px; border-left:1px dashed #717171; position:absolute; right:-8px; top:13px;}
+.nav_list b{ width:26px; height:24px; background-position:0 -826px; right:-26px; top:5px;}
+.search_box{ position:relative; margin:7px 0 0 51px;}
+.search_bar{ width:99px; height:29px; background:#d9d9d9; border-radius:13px; border:none; padding:0 16px;}
+.search_btn{ width:20px; height:29px; border:none; background-position:-30px -820px; top:0; right:13px;}
+.login_list li{ padding-left:7px; float:left;}
+.login_list span{ color:#666666; padding:13px 15px; float:left;}
+.banner{ position:relative;}
+.banner_btn{ position:absolute; bottom:20px; left:50%; margin-left:-135px;}
+.banner_btn li{ width:13px; height:13px; background:#a69797; border-radius:7px; float:left; margin-right:24px;}
+.banner_btn .active{ background:#9cba13;}
+.banner_list li{ height:378px; background:url(../img/banner.png) center 0 no-repeat #020308; display:none;}
+.banner_list .banner1{ display:block;}
+.banner_list .banner2{ background-image:url(../img/banner2.png);}
+.banner_list .banner3{ background-image:url(../img/banner3.png);}
+.banner_list .banner4{ background-image:url(../img/banner4.png);}
+.banner_list .banner6{ background-image:url(../img/banner2.png);}
+.banner_list .banner7{ background-image:url(../img/banner3.png);}
+.banner_list .banner8{ background-image:url(../img/banner4.png);}
+.banner_list .banner10{ background-image:url(../img/banner4.png);}
+/*主体*/
+.main{ background:#f2f2f2;}
+.premiere .com_tit h2{ margin-top:20px;}
+.premiere .tit_tab{ margin-top:38px;}
+/*公用图片*/
+.pic_box{ padding:2px; border:1px solid #e8e8e8; background:#fff;}
+.pic_box a{ position:relative; display:block; height:100%;}
+/*公用透明层*/
+.opabox{ position:absolute; left:0; bottom:0;}
+.msgbox{ position:relative; padding:0 0 7px 10px;}
+.msgbox h3{ color:#fff;}
+.msgbox p{ color:#bae87e;}
+/*大图片透明层*/
+.opa_big{ width:468px; height:90px; background:url(../img/big_bg.png); position:absolute; left:0; bottom:0;}
+.tit_big{ line-height:22px;}
+.name_big{ line-height:24px;}
+/*小图片透明层*/
+.opa_sm{ width:220px; height:65px; background:url(../img/sm_bg.png); position:absolute; left:0; bottom:0;}
+.tit_sm{ line-height:18px;}
+.name_sm{  line-height:18px;}
+
+.pic_list{ padding-left:16px;}
+.pic_list li{ float:left;}
+.cont_tab ul{ display:none;}
+/*图片右侧文字*/
+.pic_msg{ width:216px; padding:10px 16px 0 15px;}
+.pic_msg h3{ font-size:18px; padding-bottom:5px;}
+.pic_msg a{ color:#333; line-height:28px;}
+.pic_msg p{ line-height:22px; color:#666;}
+
+.v_chart .com_tit span{ width:15px; color:#fff; position:absolute; top:4px; left:146px;}
+.v_chart .tit_tab{ margin-top:116px;}
+.v_chart .com_tit .num{ margin-top:104px; padding-left:10px; height:32px; line-height:32px; border-left:1px solid #d5d5d5; color:#999;}
+.pic_box .num{ width:22px; height:22px; text-align:center; line-height:22px; color:#fff; font-size:14px; background:#e693a1; position:absolute; left:0; top:0;}
+.pic_box .num_sec{ background:#89b8d6;}
+.more{ margin-top:94px; padding-right:18px;}
+.more a{ font-size:14px; color:#666;}
+
+.shadow{ width:100%; height:100%; background:#000; opacity:0.5; filter:alpha(opacity:50); position:absolute; left:0; bottom:0;}
+.featured .msgbox{ padding:7px 8px 7px 6px;}
+
+.music_news .pic_box{ padding-bottom:0;}
+.pic_box .list_b{ display:block; padding-top:7px;}
+.list_b li{ float:none; padding-left:16px;}
+.list_b a{ color:#333333; line-height:28px; border-bottom:1px solid #f1f1f1;}
+
+.playlist{ padding-bottom:64px;}
+.user_pic{ padding:2px; background:#fff; border:1px solid #cccccc; box-shadow:0 0 4px #d5d5d5; position:absolute; left:8px; top:194px;}
+.msg_b h3{ padding:5px 0 0 64px; color:#669900;}
+.msg_b p{ padding:20px 0 12px 12px; color:#333333;}
+
+.like{ background:#fff; border-bottom:1px solid #dcdcdc; border-top:1px solid #dcdcdc; position:relative;}
+.like .com_tit h2{ margin-top:30px;}
+.like .change{ margin-top:43px; padding-right:15px; position:relative;}
+.like i{ width:14px; height:16px; background:url(../img/ico20_1113.png) -3px -142px; position:absolute; left:-20px; top:-2px;}
+.like a{ color:#666;}
+.like_ico{ width:44px; height:20px; background-position:0 0; position:absolute; bottom:-20px; left:50%; margin-left:-22px;}
+.login{ height:128px; line-height:128px; text-align:center; font-size:24px; color:#666;}
+.login a{ color:#690;}
+
+.footer{ background:#fff; margin-bottom:18px;}
+.link_list{ width:540px; padding:40px 0 26px; margin:0 auto;}
+.link_list li{ float:left; padding:0 12px; border-right:1px dashed #bdbdbd;}
+.link_list .last{ border:none;}
+.link_list a{ color:#666; font-size:14px;}
+.footer p{ line-height:22px; text-align:center; width:804px; margin:0 auto; color:#999; padding-bottom:30px; position:relative;}
+.footer i{ width:34px; height:42px; background:url(../img/ico.gif) no-repeat; position:absolute; right:-42px; top:0;}
+.blank{ height:18px; background:#fff;}

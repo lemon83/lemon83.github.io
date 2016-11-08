@@ -1,293 +1,141 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-ul{
-    list-style:none;
-}
-html,body{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.box{
-    width: 100%;
-    height: 100%;
-    /*overflow: hidden;*/
-    position: relative;
-    color:#fff;
-}
-.test span{
-    width: 20px;
-}
-.test a{
-    width: 20px;
-}
-.list{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 50px;
-}
-.list li{
-    width: 100%;
-    height: 100%;
-}
-.mask{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #000;
-    opacity: .5;
-}
-/*页码开始*/
-.allPage{
-    /*position: relative;*/
-    /*left: 0;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    overflow: hidden;
-    background-color: #000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.firstPage{
-    background-image: url("../imgs/bg1sm.jpg");
-}
-.scendPage{
-    background-image: url("../imgs/bg2.jpg");
-}
-.thirdPage{
-    background-image: url("../imgs/bg3.jpg");
-}
-.fourthPage{
-    background-image: url("../imgs/bg4.jpg");
-}
-.fifthPage{
-    background-image: url("../imgs/bg5.jpg");
-}
-/*页码结束*/
-.list img{
-    height: 100%;
-}
-/*导航开始*/
-.navBox{
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 7%;
-    z-index: 2;
-    height: 100%;
-}
-.navigation {
-    display: table;
-    height: 100%;
-}
-.navigation ul{
-    display:table-cell;
-    vertical-align: middle;
-}
-.navigation li{
-    padding-left: 30px;
-}
-.navigation a{
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin-bottom: 20px;
-    opacity: .7;
-    background-color: #fff;
-}
-/*导航结束*/
+@charset "UTF-8";
+body {
+  overflow: hidden; }
 
-/*自我介绍开始*/
-.mySelf{
-    position: absolute;
-    left: 140px;
-    top: 140px;
-    font-size: 22px;
-    opacity: .7;
-    z-index: 2;
-    font-family:"Microsoft YaHei";
-}
-/*自我介绍结束*/
-
-/*作品展示开始*/
-
-/*展示1：新浪静态页面*/
-.content_show{
-    width: 100%;
-    height: 100%;
-}
-.showBox{
-    width: 100%;
-    height: 100%;
-    margin: 100px;
-    white-space: nowrap;
-    font:12px/36px Verdana, Geneva, sans-serif;
-}
-.showBox li{
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    line-height: 100px;
-    float: left;
-    margin: 0 120px 0 0;
-}
-.gFont{
-    color:#fff;
-    font-size: 16px;
-    font-family: "Microsoft YaHei", "微软雅黑";
-}
-.myWork{
-    position: relative;
-}
-.myWork a{
-    width: 100%;
-    height: 100%;
-}
-
-
-.showBox div,.showBox a,.allText{
-    width:100%;
-    height:100%;
-    position:absolute;
-    left:0;top:0;
-    transition:.4s;
-    border-radius: 50%;
-}
-.mySina .sinaImg{
-    background:url("../cover/1.jpg");
-    box-shadow:inset 0 0 0 15px rgba(0,0,0,.4);
-    background-size:cover;
-    z-index:2;
-    border-radius: 50%;
-}
-
-
-
-.sinaText{
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background-color:rgba(0,0,0,.2);
-    /*transform:translate(100%);*/
-    transform:rotateY(-90deg);
-    color:#fff;
-    padding:40px;
-    box-sizing:border-box;
-    opacity:0;
-    z-index:1;
-}
-.sinaText p{
-    text-align: center;
-}
-.sinaText a{
-    width: 100%;
-    height: 100%;
-}
-.mySina:hover .sinaText{
-    transform:translate(0);
-    opacity:1;
-    z-index:2;
-}
-
-
-/*展示：京东*/
-.jd{
-    transition:.35s .7s;
-    background: url("../cover/2.jpg") no-repeat left center;
-}
- .jd{
-    box-shadow:inset 0 0 0 15px rgba(0,0,0,.4);
-}
-.myJd:hover .jd{
-    transform:scale(.5);
-    transition:.35s;
-}
-.jdText{
-    transform: translate(100%);
-    line-height: 100px;
-    opacity: 0;
-    transition: .35s .35s;
-    background-color:rgba(0,0,0,.2);
-    padding:40px;
-    box-sizing:border-box;
-    z-index:1;
-}
-
-
-.myJd:hover .jd_par{
-    transform:translate(-100%);
-    transition:.35s .35s;
-    opacity:0;
-}
-
-.myJd:hover .jdText{
-    transform:translate(0);
-    opacity: 1;
-    transition: .35s .35s;
-}
-
-/*展示：*/
-
-
-
-
-
-
-#vid{
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-
-#me{
-    width: 200px;
-    height: 26px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -100px;
-    margin-top: -13px;
-    z-index: 2;
-}
-#myName{
+#me {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  width: 200px;
+  height: 26px;
+  margin-left: -100px;
+  margin-top: -13px;
+  z-index: 2; }
+  #me #myName {
     display: inline-block;
     position: absolute;
     left: 0;
     top: 0;
     line-height: 26px;
     font-size: 18px;
-    color: rgba(255, 255, 211, .6);
-}
-#nameLine{
+    color: rgba(255, 255, 211, 0.6); }
+  #me #nameLine {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     text-align: center;
     line-height: 26px;
-    width: 0;
     transition: .7s;
     border-bottom: 1px solid darkcyan;
     overflow: hidden;
-    white-space: nowrap;
-}
-#myName:hover #nameLine{
-    width:100%;
-}
+    white-space: nowrap; }
 
+#myName:hover #nameLine {
+  width: 100%; }
 
+#box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: #fff; }
+  #box #list {
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    position: absolute; }
+    #box #list .allPage {
+      width: 100%;
+      height: 100%; }
+    #box #list .img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      border-radius: 50%; }
+    #box #list img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      vertical-align: top; }
+    #box #list .allPage {
+      overflow: hidden;
+      background-color: #000;
+      background-size: cover;
+      background-position: center center; }
+    #box #list .firstPage {
+      background-image: url("../imgs/bg1sm.jpg"); }
+      .content_show {
+        clear: both;
+        height: 100%; }
+        .showBox {
+          height: 100%;
+          padding: 240px; }
+          .showBox li {
+            float: left;
+            position: relative;
+            width: 33.33%;
+            height: 200px;
+            border-radius: 50%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+            .showBox li .h-item {
+              position: relative;
+              width: 200px;
+              height: 200px;
+              border-radius: 50%; }
+            .showBox li .img:before {
+              position: absolute;
+              display: block;
+              content: '';
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3); }
+            .showBox li .animation {
+              -webkit-transition: all .35s ease;
+              -moz-transition: all .35s ease;
+              transition: all .35s ease; }
+          .h-item .h-item * {
+            box-sizing: border-box; }
 
+          .h-item {
+            font: 16px/200px "Microsoft YaHei", "微软雅黑";
+            text-align: center; }
+            .h-item .sinaText, .h-item .iqyText, .h-item .yytText {
+              background-color: rgba(0, 0, 0, 0.5);
+              -webkit-transition: .35s;
+              -moz-transition: .35s;
+              transition: .35s;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              color: white;
+              border-radius: 50%; }
+            .h-item a:hover {
+              text-decoration: none; }
+          .showBox .mySina .sinaText {
+            transform: rotateY(90deg); }
+          .showBox .mySina a:hover .sinaText {
+            transform: rotateY(0deg);
+            opacity: 1; }
+          .showBox .myIqy .iqyText {
+            opacity: 0;
+            transform: translateX(100%); }
+          .showBox .myIqy a:hover .iqyText {
+            transform: translate(0);
+            opacity: 1; }
+    #box #list .scendPage {
+      background-image: url("../imgs/bg2.jpg"); }
+    #box #list .thirdPage {
+      background-image: url("../imgs/bg3.jpg"); }
+    #box #list .fourthPage {
+      background-image: url("../imgs/bg4.jpg"); }
+    #box #list .fifthPage {
+      background-image: url("../imgs/bg5.jpg"); }
 
-
+/*# sourceMappingURL=pc.css.map */
