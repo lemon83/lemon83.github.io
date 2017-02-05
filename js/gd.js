@@ -65,7 +65,6 @@ mouseWheel(window,"load",function(){
                 },30)
             }
         }else{
-            console.log(aList.style.top,-(aLi.length-1)*winHeight,"54");
             if(parseInt(getStyle(aList).top)<=-(aLi.length-1)*winHeight){
                 aList.style.top=-(aLi.length-1)*winHeight+"px";
                 flag=true;
@@ -194,8 +193,5 @@ mouseWheel(document.documentElement,"touchmove", function (evt) {
 
 
     }
-
-
-
 },false)
 }
