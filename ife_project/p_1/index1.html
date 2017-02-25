@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+        body{
+            padding: 30px;
+        }
+        .check,.radio{
+            width: 1em;
+            height: 1em;
+            border:0.06em solid #ccc;
+            position: relative;
+        }
+        .radio{
+            border-radius: 50%;
+        }
+        .radio.checked,.check.checked{
+            border-color:red;
+        }
+        .check.checked::before{
+            content:"";
+            position: absolute;
+            border-style: solid;
+            border-color: red;
+            border-width: 0 0.2em 0.3em 0;
+            height: 0.5em;
+            top: 0.55em;
+            left: 0.25em;
+            margin-top: -0.5em;
+            transform: rotate(45deg);
+            width: 0.3em;
+        }
+        .radio.checked::before{
+            content:"";
+            position: absolute;
+            padding: 5px;
+            left: 8px ;
+            top:8px;
+            margin-top: -5px;
+            margin-left: -5px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="check"></li>
+        <br/>
+        <li class="radio"></li>
+    </ul>
+
+
+    <script>
+        var list = document.querySelector('ul');
+        list.addEventListener('click',function(e){
+            if(e.target.tagName==="LI"){
+                e.target.classList.toggle('checked');
+            }
+        })
+    </script>
+</body>
+</html>

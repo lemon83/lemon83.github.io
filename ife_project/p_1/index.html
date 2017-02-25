@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义checkbox， radio样式</title>
+
+</head>
+
+
+<style>
+    input{
+        display: none;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+    }
+    span{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+    }
+    .check1{
+        background: url("./images/result.png") 0 0;
+    }
+    .radio1{
+        background: url("./images/result.png") 0 -52px;
+        }
+    #check:checked ~ * .check1{
+        background-position: 0 -26px;
+    }
+    #radio:checked ~ * .radio1{
+        background-position: 0 -78px;
+    }
+
+
+
+    #check:checked ~ .text3{
+        color:deepskyblue;
+    }
+
+
+    .text1:hover ~ .text3{
+        color:red;
+    }
+    /*
+            div ~ span
+                    选择某个元素的兄弟级
+                        (不包含该元素之前的兄弟)
+
+            div ~ * span
+                    选择某个元素的兄弟级
+                        (不包含该元素之前的兄弟,可以选到身为子级的【span】)
+
+    */
+</style>
+<body>
+
+<img src="http://p1.bqimg.com/567571/99322cf8c3283e42.png" alt="image"/>
+<br/><br/><br/>
+<div>===============================</div>
+<br/><br/>
+<input type="checkbox" id="check"/>
+<input type="radio" id="radio"/>
+<label for="check"><span class="check1"></span></label>
+<br/>
+<label for="radio"><span class="radio1"></span></label>
+<br/><br/>
+<p class="text1" style="float:left;">文字1</p>
+<br/><br/>
+<h3>文字2</h3>
+<br/>
+<i class="text3">文字3</i>
+<i class="text3">文字3</i>
+<strong><i class="text3">文字3</i></strong>
+<i class="text3">文字3</i>
+
+<div>===============================</div>
+<br/><br/>
+
+
+
+
+
+</body>
+</html>
