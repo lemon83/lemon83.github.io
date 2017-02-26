@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义网页右键菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+            text-decoration: none;
+        }
+        ul{
+            display: none;
+            position: absolute;
+            background-color: #ccc;
+            width: 80px;
+            font-size: 18px;
+            font-family: "Microsoft YaHei", "微软雅黑";
+        }
+        ul li{
+            margin-bottom: 5px;
+        }
+        ul li:hover{
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<style>
+
+
+</style>
+<body>
+
+<script>
+
+    window.onload=function(){
+        var menu=document.getElementById('menuList');
+        document.oncontextmenu=function(e){
+            e=e||event;
+            e.cancelBubble=true;
+
+            var mouseX= e.clientX;
+            var mouseY= e.clientY;
+            var win_w=document.documentElement.clientWidth || document.body.clientWidth;
+            var win_h=document.documentElement.clientHeight || document.body.clientHeight;
+
+            menu.style.display='block';
+            if(mouseY+menu.offsetHeight>win_h && mouseX+menu.offsetWidth>win_w){
+
+                menu.style.left=mouseX-menu.offsetWidth+'px';
+                menu.style.top=mouseY-menu.offsetHeight+'px';
+
+            }
+            else if(mouseY+menu.offsetHeight>win_h){
+
+                menu.style.top=mouseY-menu.offsetHeight+'px';
+                menu.style.left=mouseX+'px';
+
+            }
+            else if(mouseX+menu.offsetWidth>win_w){
+
+                menu.style.left=mouseX-menu.offsetWidth+'px';
+                menu.style.top=mouseY+'px';
+
+            }
+            else{
+                menu.style.left=mouseX+'px';
+                menu.style.top=mouseY+'px';
+            }
+            if(e.preventDefault){
+                e.preventDefault();
+            }else{
+                return false
+            }
+        }
+        document.onclick=function(){
+            menu.style.display='none';
+            }
+
+        var aList=menu.getElementsByTagName('li');
+
+        for(var i=0;i<aList.length;i++){
+            aList[i].onclick=function(){
+                alert(this.innerText)
+            }
+        }
+    }
+
+</script>
+    <ul id="menuList">
+        <li><a href="javascript:;">menu1</a></li>
+        <li><a href="javascript:;">menu2</a></li>
+        <li><a href="javascript:;">menu3</a></li>
+    </ul>
+
+
+
+
+
+</body>
+</html>
