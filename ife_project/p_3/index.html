@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则匹配手机号</title>
+    <style>
+        body{
+            padding: 300px;
+        }
+        #tip{
+            font-size: 0.8em;
+            color:red;
+            font-family: "Microsoft YaHei", "微软雅黑";
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+
+    window.onload=function(){
+        var oTel=document.getElementById('tel');
+        var oBtn=document.getElementById('btn');
+        var oTip=document.getElementById('tip');
+        var reg=/^(134|135|136|137|138|139|150|151|152|157|158|159|188|130|131|132|133|134)\d{8}$/;
+        oTel.onblur=function(){
+
+            if(reg.test(oTel.value)){
+                oTip.innerHTML='有效的手机号'
+            }
+              else{
+                oTip.innerHTML='请输入有效的手机号'
+            }
+        }
+
+
+
+    }
+</script>
+
+
+        <input type="text" placeholder="请输入手机号" id="tel"/>&nbsp;<span id="tip"></span>
+
+</body>
+</html>
