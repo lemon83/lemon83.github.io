@@ -8,6 +8,9 @@
 编译、上传
 
 npm run build
+
 git add .
+
 git commit -m "update"
+
 git push
