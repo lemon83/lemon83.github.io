@@ -1,3 +1,4 @@
+<font size='14px' family='"Microsoft YaHei", "微软雅黑"'>
 #### 用javaScript下载文件
 * HTML5为<a>标签添加了一个download属性，这个属性功能是下载
 
@@ -47,5 +48,6 @@ Blob全称Binary large object,表示一个类文件对象，可以用它来表�
 说法,File API也是基于blob来实现的。
 
 由于本文的主题是讲javaScript下载文件，那构建的方式就是通过服务器返回的文件来创建blob。
+</font>
 
 
