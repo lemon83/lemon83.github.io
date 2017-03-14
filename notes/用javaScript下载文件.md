@@ -50,7 +50,7 @@ window.URL里面有两个方法：
 
 * 最简单的方式就是用fetch API了，我们可以整合上面的例子：
 
-    fetch('../notes/test.txt').then(res =>res.blob().then(blob => {
+    {fetch('../notes/test.txt').then(res =>res.blob().then(blob => {
 
 
         var a = document.createElement('a');
@@ -72,7 +72,7 @@ window.URL里面有两个方法：
 
 
         window.URL.revokeObjectURL(url)
-    }))
+    }))}
 
 * 这种写法相较于前面的写法的确麻烦。如果你要下载的是已经存在服务器上的静态文件的话，
 那么按照上一个写法是最方便的。浏览器会帮你处理下载过程，不需要你干涉。如果用blob
