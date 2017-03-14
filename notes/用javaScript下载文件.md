@@ -25,7 +25,7 @@
         var filename='what-you-want.txt';
         a.href=url;
         a.download=filename;
-        a.click();
+        a.click();      
         window.URL.revokeObjectURL(url);
 `
 
