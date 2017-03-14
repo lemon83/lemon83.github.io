@@ -37,3 +37,15 @@ window.URL里面有两个方法：
 * createObjectURL用blob对象来创建一个objectURL(它是一个DOMString)，我们可以
 用这个objectURL来表示某个blob对象，这个objectURL可以用在href和src之类的属性上。
 
+* revokeObjectURL释放由createObjectURL创建的objectURL，当该objectURL不需要
+的时候，我们要主动调用这个方法来获取最佳性能和内存使用。
+
+上面JS代码用blob对象创建了一条URL，然后用a标签引该URL，再触发点击事件就可以下载文件了
+
+
+Blob全称Binary large object,表示一个类文件对象，可以用它来表示一个文件。根据MDN上的
+说法,File API也是基于blob来实现的。
+
+由于本文的主题是讲javaScript下载文件，那构建的方式就是通过服务器返回的文件来创建blob。
+
+
