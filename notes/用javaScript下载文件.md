@@ -20,6 +20,8 @@
 * 用javaScript来触发它的click事件
 
 `
+
+
                 var a=document.createElement('a');
 
 
