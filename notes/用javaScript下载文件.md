@@ -6,3 +6,19 @@
 
 
 ![down pic](http://lemon83.github.io/notes/images/download.png)
+
+* 上图为download的使用方法，href就是该文件的位置，download则是该文件下载下来的名字。
+
+* 上面是用html5的新特性来实现下载文件,下面将用JS来下载文件。
+
+事实上，用javaScript来下载文件也是利用这一特性来实现的 ：
+* 用javaScript创建一个隐藏的<a>标签
+* 设置它的href属性
+* 设置它的download属性
+* 用javaScript来触发它的click事件
+![js pic](http://lemon83.github.io/notes/images/js_download.png)
+
+window.URL里面有两个方法：
+* createObjectURL用blob对象来创建一个objectURL(它是一个DOMString)，我们可以
+用这个objectURL来表示某个blob对象，这个objectURL可以用在href和src之类的属性上。
+
