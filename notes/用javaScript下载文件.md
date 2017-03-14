@@ -19,7 +19,7 @@
 * 设置它的download属性
 * 用javaScript来触发它的click事件
 
-    //var a=document.createElement('a');
+    `var a=document.createElement('a');
 
     var url=window.URL.createObjectURL(blob);
 
@@ -31,7 +31,7 @@
 
     a.click();
 
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(url);`
 
 window.URL里面有两个方法：
 * createObjectURL用blob对象来创建一个objectURL(它是一个DOMString)，我们可以
