@@ -85,7 +85,9 @@ window.URL里面有两个方法：
 的方式来下载文件的话，会有下面这些限制：
 
 限制一：不同浏览器对 blob 对象有不同的限制
+
 具体看看下面这个表格（出自 FileSaver.js）：
+
 ![pic](http://lemon83.github.io/notes/images/640.webp)
 
 
