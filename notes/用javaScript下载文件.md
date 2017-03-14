@@ -1,4 +1,3 @@
-<font size='14px' family='"Microsoft YaHei", "微软雅黑"'>
 #### 用javaScript下载文件
 * HTML5为<a>标签添加了一个download属性，这个属性功能是下载
 
@@ -20,19 +19,19 @@
 * 设置它的download属性
 * 用javaScript来触发它的click事件
 
-    `var a=document.createElement('a');`
+    //var a=document.createElement('a');
 
-    `var url=window.URL.createObjectURL(blob);`
+    //var url=window.URL.createObjectURL(blob);
 
-    `var filename='what-you-want.txt';`
+    //var filename='what-you-want.txt';
 
-    `a.href=url;`
+    //a.href=url;
 
-    `a.download=filename;`
+    //a.download=filename;
 
-    `a.click();`
+    //a.click();
 
-    `window.URL.revokeObjectURL(url);`
+    //window.URL.revokeObjectURL(url);
 
 window.URL里面有两个方法：
 * createObjectURL用blob对象来创建一个objectURL(它是一个DOMString)，我们可以
@@ -48,6 +47,6 @@ Blob全称Binary large object,表示一个类文件对象，可以用它来表�
 说法,File API也是基于blob来实现的。
 
 由于本文的主题是讲javaScript下载文件，那构建的方式就是通过服务器返回的文件来创建blob。
-</font>
+
 
 
