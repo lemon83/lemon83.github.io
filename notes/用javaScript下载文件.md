@@ -5,7 +5,7 @@
 * [点我进入下载页面](http://lemon83.github.io/notes/down/down.html)
 
 
-![down pic](http://lemon83.github.io/notes/images/download.png)
+![down pic](http://lemon83.github.io/notes/images/down/download.png)
 
 * 上图为download的使用方法，href就是该文件的位置，download则是该文件下载下来的名字。
 
