@@ -5,7 +5,7 @@
 * [点我进入下载页面](http://lemon83.github.io/notes/down/down.html)
 
 
-![down pic](http://lemon83.github.io/notes/images/down/download.png)
+![down pic](http://lemon83.github.io/notes/images/download.png)
 
 * 上图为download的使用方法，href就是该文件的位置，download则是该文件下载下来的名字。
 
@@ -16,7 +16,7 @@
 * 设置它的href属性
 * 设置它的download属性
 * 用javaScript来触发它的click事件
-![js pic](http://lemon83.github.io/notes/images/js_download.png)
+![js pic](http://lemon83.github.io/notes/images/jsDownload.png)
 
 window.URL里面有两个方法：
 * createObjectURL用blob对象来创建一个objectURL(它是一个DOMString)，我们可以
