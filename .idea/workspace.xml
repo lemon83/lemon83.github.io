@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21773cb5-2916-442b-a1f0-61a8b3cdc58b" name="默认的" comment="">
-      <change type="DELETED" beforePath="D:\myweb\tes1t.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes/用javaScript下载文件.md" afterPath="$PROJECT_DIR$/notes/用javaScript下载文件.md" />
     </list>
     <ignored path="myweb.iws" />
@@ -51,8 +49,8 @@
       <file leaf-file-name="用javaScript下载文件.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/用javaScript下载文件.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.559415" vertical-offset="0" max-vertical-offset="547">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.21755028" vertical-offset="0" max-vertical-offset="547">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -507,8 +505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/用javaScript下载文件.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.559415" vertical-offset="0" max-vertical-offset="547">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.21755028" vertical-offset="0" max-vertical-offset="547">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding />
         </state>
       </provider>

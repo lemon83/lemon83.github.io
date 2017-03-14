@@ -5,11 +5,12 @@
 * [点我进入下载页面](http://lemon83.github.io/notes/down/down.html)
 
 
-![down pic](http://lemon83.github.io/notes/images/download.png)
+* `<a href="../notes/test.txt" download="test">点我下载</a>`
 
-* 上图为download的使用方法，href就是该文件的位置，download则是该文件下载下来的名字。
+* 上面为download的使用方法，href就是该文件的位置，download则是该文件下载下来的名字。
 
 * 上面是用html5的新特性来实现下载文件,下面将用JS来下载文件。
+
 
 事实上，用javaScript来下载文件也是利用这一特性来实现的 ：
 * 用javaScript创建一个隐藏的<a>标签
