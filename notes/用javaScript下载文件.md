@@ -51,12 +51,26 @@ window.URL里面有两个方法：
 * 最简单的方式就是用fetch API了，我们可以整合上面的例子：
 
     fetch('../notes/test.txt').then(res =>res.blob().then(blob => {
+
+
         var a = document.createElement('a');
+
+
         var url = window.URL.createObjectURL(blob);
+
+
         var filename = 'test.txt';
+
+
         a.href = url;
+
+
         a.download = filename;
+
+
         a.click();
+
+
         window.URL.revokeObjectURL(url)
     }))
 
@@ -64,7 +78,7 @@ window.URL里面有两个方法：
 那么按照上一个写法是最方便的。浏览器会帮你处理下载过程，不需要你干涉。如果用blob
 的方式来下载文件的话，会有下面这些限制：
 
-
+<font color="blue">限制一：不同浏览器对 blob 对象有不同的限制</font>
 
 
 
