@@ -5,7 +5,7 @@
 * [点我进入下载页面](http://lemon83.github.io/notes/down/down.html)
 
 
-* `<a href="../notes/test.txt" download="test">点我下载</a>`
+ `<a href="../notes/test.txt" download="test">点我下载</a>`
 
 * 上面为download的使用方法，href就是该文件的位置，download则是该文件下载下来的名字。
 
@@ -17,7 +17,17 @@
 * 设置它的href属性
 * 设置它的download属性
 * 用javaScript来触发它的click事件
-![js pic](http://lemon83.github.io/notes/images/jsDownload.png)
+
+`
+var a=document.createElement('a');
+        var url=window.URL.createObjectURL(blob);
+        var filename='what-you-want.txt';
+        a.href=url;
+        a.download=filename;
+        a.click();
+        window.URL.revokeObjectURL(url);
+`
+***
 
 window.URL里面有两个方法：
 * createObjectURL用blob对象来创建一个objectURL(它是一个DOMString)，我们可以
