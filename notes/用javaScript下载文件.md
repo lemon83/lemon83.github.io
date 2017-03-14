@@ -19,25 +19,19 @@
 * 设置它的download属性
 * 用javaScript来触发它的click事件
 
-`var a=document.createElement('a');`
+    `var a=document.createElement('a');`
 
+    `var url=window.URL.createObjectURL(blob);`
 
-`var url=window.URL.createObjectURL(blob);`
+    `var filename='what-you-want.txt';`
 
+    `a.href=url;`
 
-`var filename='what-you-want.txt';`
+    `a.download=filename;`
 
+    `a.click();`
 
-`a.href=url;`
-
-
-`a.download=filename;`
-
-
-`a.click();`
-
-
-`window.URL.revokeObjectURL(url);`
+    `window.URL.revokeObjectURL(url);`
 
 window.URL里面有两个方法：
 * createObjectURL用blob对象来创建一个objectURL(它是一个DOMString)，我们可以
