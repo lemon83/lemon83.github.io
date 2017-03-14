@@ -20,13 +20,15 @@
 * 用javaScript来触发它的click事件
 
 `
+        <pre>
         var a=document.createElement('a');
-        var url=window.URL.createObjectURL(blob);
-        var filename='what-you-want.txt';
-        a.href=url;
-        a.download=filename;
-        a.click();      
-        window.URL.revokeObjectURL(url);
+                var url=window.URL.createObjectURL(blob);
+                var filename='what-you-want.txt';
+                a.href=url;
+                a.download=filename;
+                a.click();
+                window.URL.revokeObjectURL(url);
+        </pre>
 `
 
 window.URL里面有两个方法：
