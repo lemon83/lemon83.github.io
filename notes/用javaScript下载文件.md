@@ -1,7 +1,7 @@
-####用javaScript下载文件
+#### 用javaScript下载文件
 * HTML5为<a>标签添加了一个download属性，这个属性功能是下载
 
-#####点击下面网页内容
+##### 点击下面网页内容
 * [点我进入下载页面](http://lemon83.github.io/notes/down/down.html)
 
 
@@ -11,6 +11,7 @@
 
 * 上面是用html5的新特性来实现下载文件,下面将用JS来下载文件。
 
+***
 
 事实上，用javaScript来下载文件也是利用这一特性来实现的 ：
 * 用javaScript创建一个隐藏的<a>标签
@@ -19,7 +20,7 @@
 * 用javaScript来触发它的click事件
 
 `
-var a=document.createElement('a');
+        var a=document.createElement('a');
         var url=window.URL.createObjectURL(blob);
         var filename='what-you-want.txt';
         a.href=url;
@@ -27,7 +28,6 @@ var a=document.createElement('a');
         a.click();
         window.URL.revokeObjectURL(url);
 `
-***
 
 window.URL里面有两个方法：
 * createObjectURL用blob对象来创建一个objectURL(它是一个DOMString)，我们可以
