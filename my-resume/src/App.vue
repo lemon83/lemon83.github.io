@@ -119,32 +119,17 @@ html{
         fullMarkdown: `谢永竞
 ----
 
+### 个人能力
+    - 掌握HTML + CSS + JavaScript;
+    - 熟悉jQuery,能使用jQuery快速进行开发;
+    - 熟悉AJAX,对接后台接口进行交互开发;
+    - 了解Node.js
+    - 了解vue.js
 
-技能
-----
-
-*基本技能：
-   * 熟练掌握HTML,CSS，可以快速准确完成页面布局。
-   * 熟练掌握JavaScript，能够使用原生JavaScript完成交互任务。
-   * 熟悉ES6
-*框架和库：
-   * 熟练使用jQuery进行开发
-   * 正在学习vue.js
-   * 学习vue的过程接触到了webpack 和 node 并在使用
-
-工作经历
-----
-
-
-[北京九牛环宇有限公司](http://www.ejiuniu.com/index.html)  2015/08——2016/11
-
-
-
-
-自评：
-
-    目前能力能做事,框架会用。希望能有更进一步的发展。
-
+### 自我评价
+    - 热爱技术
+    - 喜欢挑战
+    - 专注钻研
 
 `
       }
