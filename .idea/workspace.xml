@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21773cb5-2916-442b-a1f0-61a8b3cdc58b" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_vue/vue-blog/.gitignore" afterPath="$PROJECT_DIR$/blog_vue/vue-blog/.gitignore" />
-    </list>
+    <list default="true" id="21773cb5-2916-442b-a1f0-61a8b3cdc58b" name="默认的" comment="" />
     <ignored path="myweb.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -349,12 +346,12 @@
       <workItem from="1492849990854" duration="3031000" />
       <workItem from="1492910780154" duration="14549000" />
       <workItem from="1492949247296" duration="7041000" />
-      <workItem from="1492994729842" duration="50457000" />
+      <workItem from="1492994729842" duration="51055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125469000" />
+    <option name="totallyTimeSpent" value="126067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,7 +363,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

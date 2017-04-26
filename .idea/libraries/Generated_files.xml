@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/my-resume/dist/static/js/manifest.71d5febbaa640112e8cc.js" />
+        <item url="file://$PROJECT_DIR$/dist/my-resume/dist/static/js/app.3979dda383aa0eaf5d0e.js" />
+        <item url="file://$PROJECT_DIR$/dist/my-resume/dist/static/js/vendor.bfeae82dbc638ebabe6e.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/my-resume/dist/static/js/manifest.71d5febbaa640112e8cc.js" />
+      <root url="file://$PROJECT_DIR$/dist/my-resume/dist/static/js/app.3979dda383aa0eaf5d0e.js" />
+      <root url="file://$PROJECT_DIR$/dist/my-resume/dist/static/js/vendor.bfeae82dbc638ebabe6e.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
